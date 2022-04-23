@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator{
+    position: relative;
+    max-width: 600px;
+    padding: 20px 0 0 0;
+    box-shadow: 5px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( -30deg, rgb(239,80,80) 0%, #9C27B0 100%);
+}
+.input{
+    text-align: right;
+    font-size: 50px;
+    border: 0;
+    background: transparent;
+    color: white;
+    display: flex;
+}
+.preResult{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: white;
+    font-size: 15px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.number,
+.special{
+    font-size: 40px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    border: 0;
+    background: transparent;
+    color: white;
+    
+}
+
+.number:hover,
+.special:hover{
+    background-color: white;
+    color: black;
+}
+
+.special__c{
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 320px){
+    .input{
+        font-size: 60px;
+        height: 30vh;   
+    }
+
+    .buttons{
+        height: 70vh;
+        
+    }
+    .preResult{
+        font-size: 25px;
+        top: 30px;
+    }
+    .number,
+    .special{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 220px){
+    .input{
+        font-size: 45px;
+        height: 30vh;   
+    }
+    .preResult{
+        font-size: 15px;
+        top: 40px;
+    }
+    .number,
+    .special{
+        font-size: 20px;
+    }
+}
